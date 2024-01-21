@@ -36,15 +36,10 @@ jobs:
       fail-fast: false
       matrix:
         python-version:
-          - "3.8"
-          - "3.9"
-          - "3.10"
           - "3.11"
           - "3.12"
         os:
           - ubuntu-latest
-          - windows-latest
-          - macOS-latest
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
@@ -85,14 +80,14 @@ jobs:
 
       # Do a dry run of PSR
       - name: Test release
-        uses: python-semantic-release/python-semantic-release@v8.7.2
+        uses: bluetooth-devices/python-semantic-release@311
         if: github.ref_name != 'main'
         with:
           root_options: --noop
 
       # On main branch: actual PSR + upload to PyPI & GitHub
       - name: Release
-        uses: python-semantic-release/python-semantic-release@v8.7.2
+        uses: bluetooth-devices/python-semantic-release@311
         id: release
         if: github.ref_name == 'main'
         with:
