@@ -24,13 +24,13 @@ from .parser import LeaoneBluetoothDeviceData
 __version__ = "0.1.0"
 
 __all__ = [
+    "DeviceClass",
+    "DeviceKey",
     "LeaoneBluetoothDeviceData",
     "SensorDescription",
     "SensorDeviceInfo",
-    "DeviceClass",
-    "DeviceKey",
-    "SensorUpdate",
     "SensorDeviceInfo",
+    "SensorUpdate",
     "SensorValue",
     "Units",
 ]
