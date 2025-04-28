@@ -32,7 +32,7 @@ habluetooth = {version = ">=3.42.0", python = ">=3.11,<3.14"}
 
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.0"
+pytest = ">=7,<9"
 pytest-cov = "^3.0"
 
 [tool.poetry.group.docs]
