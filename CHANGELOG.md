@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.3.0 (2025-04-30)
+
+### Features
+
+
+- Use changed_manufacturer_data from newer bluetooth-sensor-state-data (#41) ([`f1a9118`](https://github.com/Bluetooth-Devices/leaone-ble/commit/f1a9118760e1308b19848f7e848a3958d3485f71))
+
+
 ## v0.2.0 (2025-04-28)
 
 ### Bug fixes
