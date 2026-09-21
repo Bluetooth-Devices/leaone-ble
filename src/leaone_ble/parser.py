@@ -85,7 +85,7 @@ class LeaoneBluetoothDeviceData(BluetoothData):
             + changed_manufacturer_data[last_id]
         )
         xvalue = data[1:9]
-        (frame_cnt, weight, impedance, _control, stabilized_byte) = UNPACK_DATA(xvalue)
+        frame_cnt, weight, impedance, _control, stabilized_byte = UNPACK_DATA(xvalue)
         self.set_precision(2)
         packet_id = frame_cnt << 8 | stabilized_byte
         self.update_predefined_sensor(SensorLibrary.PACKET_ID__NONE, packet_id)
