@@ -29,7 +29,6 @@ __all__ = [
     "LeaoneBluetoothDeviceData",
     "SensorDescription",
     "SensorDeviceInfo",
-    "SensorDeviceInfo",
     "SensorUpdate",
     "SensorValue",
     "Units",
